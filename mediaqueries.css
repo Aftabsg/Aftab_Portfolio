@@ -84,6 +84,10 @@
     /* Adjust for footer */
     #footer {
         margin-top: 2rem;
+        margin-bottom: -5rem;
+    }
+    .nav-links-container{
+        margin-top: -5rem;
     }
 }
 
@@ -136,5 +140,14 @@
     #footer {
         margin-top: 2rem;
         text-align: center;
+    }
+    .icon_arrow2 {
+        position: absolute; /* Make the position absolute */
+        bottom: -2900px; /* Adjust the distance from the bottom */
+        right:0px; /* Adjust the distance from the right */
+        cursor: pointer; /* Optional: changes cursor to pointer */
+        height: 2rem;
+        width: 2rem;
+        right: 220px;
     }
 }

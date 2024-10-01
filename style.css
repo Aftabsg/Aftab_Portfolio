@@ -1,0 +1,675 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav, .nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Sections */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* Profile Section */
+#profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh;
+  
+}
+
+.section__pic-container {
+  height: 100px;
+  width: 100px;
+  margin-left: 15rem;
+  margin-bottom: 5rem;
+  order: 2;
+}
+
+.section__pic-container img {
+  border-radius: 25%;
+  height: 400px;
+  margin-top: 0;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10vh;
+  flex: 1; /* Ensure it takes up the proper space */
+}
+
+.section__text p {
+  font-weight: 600;
+  margin-top: -4rem;
+}
+
+.section__text__p1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem; /* Fixing margin */
+  text-align: left;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.icon:hover {
+  height: 4rem;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0rem;
+}
+
+.btn {
+  background-color: black;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.5rem;
+  border-radius: 20%;
+  font-family: cursive;
+  color: white;
+}
+
+.btn:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+  height: 4rem;
+  width: 8rem;
+}
+
+/* About Section */
+#about {
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+}
+
+.section__text__p3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.text-container {
+  text-align: justify;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section__text__p4 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.experience-sub-title {
+  text-align: center;
+}
+
+.icon1 {
+  height: 50px;
+  margin-left: 0rem;
+}
+
+.text-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+}
+
+/* Experience Section */
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* Hobbies Section */
+#experience-hobbies-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.hobbies-details-container,
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.myroletitle{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.icon_arrow1 {
+  position: absolute; /* Make the position absolute */
+  bottom: 0px; /* Adjust the distance from the bottom */
+  right: -850px; /* Adjust the distance from the right */
+  cursor: pointer; /* Optional: changes cursor to pointer */
+  height: 2rem;
+  width: 2rem;
+}
+.icon_arrow1:hover {
+  height: 4rem;
+  width: 4rem;
+}
+
+/* Organisations section */
+#organisation{
+  display: flex;
+}
+
+.about-containers {
+  display: flex; /* Use flexbox to layout items in a row */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: flex-start; /* Align items at the start to maintain equal top margin */
+  gap: 2rem; /* Add space between the icons */
+}
+
+.details-container {
+  display: flex; /* Ensure the icon is centered within its container */
+  align-items: center; /* Center icon vertically */
+}
+
+/* Optionally, add margin to the icons */
+.icon3 {
+  margin-top: -2rem; /* Adjust this value for desired spacing */
+  height: 50px; /* Set a fixed height for consistency */
+  margin-left: -2.5rem;
+  margin-right: 4rem;
+}
+.ltimindtreeicon{
+  height: 25rem;
+}
+.icon3:hover{
+  height: 4rem;
+}
+
+.section__text__p5{
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  text-align: center;
+  font-style: italic;
+  margin-top:-35rem;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: center; /* Center the items */
+  gap: 2rem; /* Space between items */
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+/* Accenture logo */
+.text-below-icon,
+.year-below-icon {
+  margin-top: 0.5rem; /* Space between the image and the text */
+}
+
+.year-below-icon {
+  font-size: 0.9rem; /* Adjust font size as needed */
+  color: rgb(150, 150, 150); /* Adjust color */
+}
+
+
+.year-below-icon {
+  text-align: center; /* Center the year text */
+  margin-top: 0.25rem; /* Space between the organization name and the year */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: blueviolet; /* Adjust color to differentiate it */
+  font-style: italic;
+  
+}
+
+/* LTIMindtree logo */
+
+.text-below-icon,
+.year-below-icon1 {
+  margin-top: 0.5rem; /* Space between the image and the text */
+}
+
+.year-below-icon1 {
+  font-size: 0.9rem; /* Adjust font size as needed */
+  color: rgb(150, 150, 150); /* Adjust color */
+}
+
+
+.year-below-icon1 {
+  text-align: center; /* Center the year text */
+  margin-top: 0.25rem; /* Space between the organization name and the year */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #030CAB; /* Adjust color to differentiate it */
+  font-style: italic;
+  
+}
+
+
+.icon_arrow2:hover {
+  height: 4rem;
+  width: 4rem;
+}
+.icon_arrow2{
+  position: absolute; /* Make the position absolute */
+  bottom: -2200px; /* Adjust the distance from the bottom */
+  right:0px; /* Adjust the distance from the right */
+  cursor: pointer; /* Optional: changes cursor to pointer */
+  height: 2rem;
+  width: 2rem;
+}
+
+/* Contact me section */
+
+.details-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.icon-text-container {
+  display: flex; /* Enables flexbox for side by side */
+  align-items: center; /* Vertically centers the items */
+}
+
+.icon4{
+  width: 50px; /* Set width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between icon and text */
+}
+.icon4:hover{
+  height: 4rem;
+  width: 4rem;
+}
+
+.year-text {
+  text-align: center; /* Center the text below the icon and text */
+  margin-top: 5px; /* Space between the icon/text and the year */
+}
+
+
+.organisation{
+  margin-bottom: 4rem;
+}
+
+/* Contact Section CSS */
+#contact {
+  text-align: center;
+  padding: 0; /* Add padding for top and bottom */
+  
+  margin-top: 50rem; /* Add space above to prevent overlap */
+}
+
+.section__text__p5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Increased gap for better spacing */
+}
+
+.icon {
+  width: 30px; 
+  height: 30px; 
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1.2rem; 
+  color: black; /* Ensure text color is set */
+}
+
+/* Footer Section */
+#footer {
+  padding: 2rem 0;
+  margin-top: 4rem;
+  background-color: #f8f8f8; /* Light background for visibility */
+  color: black; /* Ensure text is visible */
+}
+
+/* Center the copyright text and icon */
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* Adjust gap between text and icon */
+  margin-top: 1rem;
+}
+
+.copyright_text {
+  font-size: 1rem;
+  color: black; /* Set to black for better visibility */
+}
+
+.icon5 {
+  width: 20px;
+  height: 20px;
+}
+
+/* Ensure text is visible on hover */
+.copyright_text:hover {
+  color: grey;
+}
+
+/* Footer Section */
+#footer {
+    padding: 2rem 0;
+    margin-top: 4rem;
+    background-color: #f8f8f8; /* Light background for visibility */
+    color: black; /* Ensure text is visible */
+}
+
+/* Center the copyright text and icon */
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Adjust gap between text and icon */
+    margin-top: 1rem;
+}
+
+.copyright_text {
+    font-size: 1rem;
+    color: black; /* Set to black for better visibility */
+}
+
+.icon5 {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ensure text is visible on hover */
+.copyright_text:hover {
+    color: grey;
+}
+
+
+

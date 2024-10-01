@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Aftab SG</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#organisation">Organisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-icon">
+        <div class="logo"> Aftab SG</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()"> About</a></li>
+                <li><a href="#experience" onclick="togglemenu()"> Experience</a></li>
+                <li><a href="#organisation" onclick="togglemenu()">Organisation</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="Profile">
+        <div class="section__pic-container">
+            <img src="./assets/aftab-pic.jpg" alt="Aftab SG profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello I'm</p>
+            <h1 class="title">Aftab SG</h1>
+            <p class="section__text__p2">SAP C4C Consultant</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/AftabResume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/aftab-s-g-3186a01a8'"/>
+                <img src="./assets/github.png" alt="My github profile"
+                class="icon" onclick="location.href='https://github.com/Aftabsg'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p6"> Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container"></div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon"
+                    class="icon"/>
+                    <h3>Experience</h3>
+                    <p> 2+ years <br/> SAP C4C Consultant</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon"
+                    class="icon"/>
+                    <h3>Education</h3>
+                    <p> B.E. Bachelor of Engineering <br/> Mechanical Engineering</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p> Dedicated SAP C4C Consultant adept at optimizing CRM processes and
+                    implementing tailored solutions for enhanced client engagement. 
+                    Skilled in cross-functional collaboration and passionate about exploring new technologies. 
+                    Outside of work, I enjoy gaming and am always open to networking and 
+                    new opportunities in CRM and SAP technologies.
+                </p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+
+    <!-- Experience and Hobbies Section -->
+    <div id="experience-hobbies-container">
+        <section id="experience">
+            <p class="section__text__p4">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <p class="myroletitle"> SAP C4C Consultant</p>
+            <div class="experience-details-container">
+                <div class="article-container">
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>Workflows</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>Business Config.</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>SAP C4C Service</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>SAP C4C Sales</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>OData</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>Mashups</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>Communication Arrangements</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon1"/>
+                        <div>
+                            <h3>HTML, CSS, JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon1" class="icon_arrow1"
+        onclick="location.href='./#organisation'"/>
+        </section>
+    
+        <section id="hobbies">
+            <p class="section__text__p4">Explore My</p>
+            <h1 class="title">Hobbies</h1>
+            <div class="hobbies-details-container">
+                <div class="article-container">
+                    <article>
+                        <img src="assets/checkmark.png" alt="Hobbies icon" class="icon1"/>
+                        <div>
+                            <h3>Gaming</h3>
+                            <p>Enthusiastic Gamer</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Hobbies icon" class="icon1"/>
+                        <div>
+                            <h3>Aquarist</h></h3>
+                            <p>Aquascaper</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Hobbies icon" class="icon1"/>
+                        <div>
+                            <h3>Traveling</h3>
+                            <p>Adventure Lover</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/checkmark.png" alt="Hobbies icon" class="icon1"/>
+                        <div>
+                            <h3>Motor cycle Enthusiast</h3>
+                            <p>Motor mechanic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="organisation"></section>
+        <p class="section__text__p5"> Browse my recent</p>
+        <h1 class="title">Organisations</h1>
+        <div class="section-container"></div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/ltimindtree.png" alt="ltimindtreeicon"
+                        class="icon3"/>
+                        
+                <div class="year-below-icon1">2022-2024</div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/accenture.png" alt="accenturelogo"
+                        class="icon3"/>
+                        
+                        <div class="year-below-icon">2024-Present</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon2" class="icon_arrow2"
+        onclick="location.href='./#contact'"/>
+    </section>
+
+    
+
+    <section id="contact">
+        <p class="section__text__p5">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="icon-text-container">
+                <div class="details-container">
+                    <img src="./assets/email.png" alt="email" class="icon" 
+                    onclick="location.href='mailto:iamaftabsg@outlook.com'"/>
+                    <a href="mailto:iamaftabsg@outlook.com" class="text">iamaftabsg@outlook.com</a> 
+                </div>
+                <div class="details-container">
+                    <img src="./assets/linkedin.png" alt="linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/aftab-s-g-3186a01a8'"/>
+                    <a href='https://www.linkedin.com/in/aftab-s-g-3186a01a8' class="text">My LinkedIn Profile</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li> <a href="#about"> About</a></li>
+                    <li> <a href="#experience"> Experience</a></li>
+                    <li> <a href="#organisation"> Organisations</a></li>
+                    <li> <a href="#contact"> Contact</a></li>
+
+                </ul>
+                <div class="copyright-container">
+                    <p class="copyright_text">Copyright 2024. All rights reserved</p>
+                    <img src="./assets/copyright.jpg" alt="Copyright Icon" class="icon5" />
+                  </div>
+            </div>
+        </nav>
+        
+    </footer>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
